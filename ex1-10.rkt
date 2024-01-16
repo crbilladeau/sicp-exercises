@@ -132,3 +132,13 @@
 ; (A 0 (A 0 16384))
 ; (A 0 32768)
 ; 65536
+
+; Consider the following procedures, where A is the procedure defined above:
+
+; (define (f n) (A 0 n)) => f(n) = 2n
+; (define (g n) (A 1 n)) => g(n) = 2 to the power of n
+; (define (h n) (A 2 n)) => h(n) = 2to the power of h(n -1)
+;(define (k n) (* 5 n n)) => k(n) = 5n to the power of 2
+; Give concise mathematical definitions for the functions computed by the procedures f, g, and h for positive integer values of n.
+; For example, (k n) computes 5n2.
+
